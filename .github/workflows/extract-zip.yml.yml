@@ -1,0 +1,32 @@
+name: Extract PayPal Documents
+
+on:
+  workflow_dispatch:
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract ZIP
+        run: |
+          mkdir -p paypal_Documents
+          unzip -o paypal_Documents.zip -d paypal_Documents
+
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add paypal_Documents
+          git diff --cached --quiet || git commit -m "Extract PayPal documents"
+
+      - name: Push extracted files
+        run: |
+          git push
