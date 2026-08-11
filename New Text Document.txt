@@ -1,13 +1,324 @@
-ask : isinya ini "G:\Konsumen\didik_wbass\paypal\BERKAS_SIAP_UPLOAD_PAYPAL\scr\Submit your bank statement.jpg" apakah anda tidak salah saya harus upload ini "G:\Konsumen\didik_wbass\paypal\BERKAS_SIAP_UPLOAD_PAYPAL\1_Submit_Bank_Statement\Jago_kartu digital_History_08082026.pdf" ?
+https://www.paypal.com/us/cshelp/article/supported-activities-by-paypal--help1035?v=1&utm_source=unp&utm_medium=email&utm_campaign=RT002649&utm_unptid=b26e238b-952f-11f1-a7c1-7fedc53bdc08&ppid=RT002649&cnac=ID&rsta=id_ID(id-ID)&unptid=b26e238b-952f-11f1-a7c1-7fedc53bdc08&calc=b6e48ebe16a90&unp_tpcid=srs-parting-ways-no-funds-release&page=main%3Aemail%3ART002649&pgrp=main%3Aemail&e=cl&mchn=em&s=ci&mail=sys&appVersion=1.434.0&tenant_name=PAYPAL&xt=185428182450185426175543104038184933184935180658&xe=115153114833115152114002101255114941115052114543&link_ref=article_help1035
 
 
-answer:
-Viewed Submit%20your%20bank%20statement.jpg
 
-Betul sekali Pak, tidak salah! **Tepat 100%.** 
+PayPal logo
 
-Di layar itu tertulis: *"You'll need to submit a copy of the bank statement for a bank linked to your PayPal account..."* (Anda perlu mengunggah salinan rekening koran untuk bank yang terhubung ke akun PayPal Anda) dan format yang diterima adalah **JPG, GIF, PNG, PDF | maksimal 5 MB**.
+Personal
 
-File **`Jago_kartu digital_History_08082026.pdf`** yang ada di folder `1_Submit_Bank_Statement` itu adalah format yang paling sempurna dan profesional untuk di-upload ke sana.
+Business
 
-Silakan klik **Browse files** atau langsung ditarik *(Drag and drop)* file PDF tersebut ke dalam kotak putus-putus itu, lalu klik **Submit**! Lanjutkan ke langkah berikutnya ya Pak.
+Advertiser
+Developer
+Help
+Log In
+Sign Up
+Search
+
+0 suggestions available
+
+My Account
+
+Personal
+Business
+Supported activities by PayPal
+Why does PayPal support certain activities and not others?
+PayPal partners with card networks and various banks to provide a secure payment platform to our customers. Our partners have specific rules and restrictions for certain activities, transactions, and business models that are intended to maintain the safety of these networks. As required by these card network rules, PayPal abides by these requirements as well as applicable local laws and our own policies to maintain a safe environment and community for our users. Our platform cannot support activities that are prohibited by these requirements. In other cases, we may only be able to support certain activities with pre-approval.
+
+How does PayPal interact with Card Networks and Bank Partners?
+PayPal serves as a secure bridge to seamlessly process our customers’ online transactions. To process a transaction, PayPal sends transaction details to our bank partners. We rely on these bank partners to transmit the transaction details to the relevant card network. The card network then routes the transaction for approval by the bank that issued the card used for payment. The card networks help to ensure that valid transactions are authorized and approved, and that the funds are available so PayPal customers can ultimately receive those payments.
+
+This collaboration with card networks and bank partners is crucial in supporting our mission to provide a secure and convenient online payment experience for consumers and merchants.
+
+Where can I get more information?
+Our Acceptable Use Policy and User Agreement detail the activities that are prohibited or need pre-approval based on PayPal’s requirements from card networks and bank partners as well as applicable laws and policies. The User Agreement also covers what steps we may take if we identify potential breaches of those requirements. Refer to this section of the User Agreement for details.
+
+Please visit our Help Center home page to access other articles on how to use your PayPal account as well as a link to contact customer service. To learn more about addressing account limitations, please refer to How do I remove a limitation from my account? To report or resolve an issue with your account, please visit our Resolution Center so that we can work with you to find a solution.
+
+Was this article helpful?
+
+
+Recommended Articles
+What gambling activities does PayPal prohibit?
+Why has PayPal deactivated my account?
+What is PayPal Assistant and what can it do?
+How does PayPal provide accessible services to people with special access needs?
+What is PayPal’s Acceptable Use Policy and where can I find it?
+More ways to get help
+hc-help-option-img
+Browse All Topics
+hc-help-option-img
+Resolution Center
+hc-help-option-img
+Tax Center
+hc-help-option-img
+Message Center
+hc-help-option-img
+Technical Help
+hc-help-option-img
+Business Help
+How are we doing?
+
+Take our survey
+PayPal Logo
+Help
+Contact
+Fees
+Security Center
+Privacy Center
+Shop
+Apps
+Enterprise
+Partners
+United States
+About
+Newsroom
+Jobs
+Investor Relations
+Government Relations
+© 1999–2026
+Accessibility
+Privacy Statement
+Cookies
+Legal
+Licenses
+PayPal is located at 2211 N 1st St. San Jose, CA 95131
+
+
+
+PayPal logo
+
+Personal
+
+Business
+
+Advertiser
+Developer
+Help
+Log In
+Sign Up
+Search
+
+0 suggestions available
+
+Disputes and Limitations
+
+Personal
+Business
+How do I remove a limitation from my account?
+Before You Begin
+A limited account means that you won’t be able to do certain things with your PayPal account. For example, you might not be able to send or withdraw money. Usually, we ask you to complete some steps to remove your account limitation.
+
+Go to your Resolution Center or click the bell icon at the top of your Dashboard for more info.
+
+If all the steps are completed and your account remains limited, it either means:
+
+We've already reviewed your account and sent you an email asking for more information.
+We're still reviewing the information you provided.
+If you're required to upload documents, review our tips for submitting documents.
+
+The time it takes to resolve an account limitation depends on the complexity of your specific case.
+
+If you received an email stating your account is limited, but don't see a limitation in the Resolution Center, you may have received a fake email. Forward it to phishing@paypal.com and we'll investigate it for you.
+
+After you forward us the email, delete it from your inbox. If you clicked any links or downloaded any attachments, log in to your account and view your payments. It's also a good idea to change your password.
+
+Was this article helpful?
+
+
+Recommended Articles
+How long will it take to lift my PayPal account limitation?
+I've completed the steps to remove my limitation. Why is my account still limited?
+How do I remove a bank account from my PayPal account?
+What kind of documentation can I provide to remove my account limitation?
+Why is my PayPal account limited?
+More ways to get help
+hc-help-option-img
+Browse All Topics
+hc-help-option-img
+Resolution Center
+hc-help-option-img
+Tax Center
+hc-help-option-img
+Message Center
+hc-help-option-img
+Technical Help
+hc-help-option-img
+Business Help
+How are we doing?
+
+Take our survey
+Help
+Contact
+Fees
+Security Center
+Privacy Center
+Shop
+Apps
+Enterprise
+Partners
+United States
+About
+Newsroom
+Jobs
+Investor Relations
+Government Relations
+© 1999–2026
+Accessibility
+Privacy Statement
+Cookies
+Legal
+Licenses
+PayPal is located at 2211 N 1st St. San Jose, CA 95131
+
+PayPal logo
+
+Personal
+
+Business
+
+Advertiser
+Developer
+Help
+Log In
+Sign Up
+Help Center - Personal Account
+How can we help?
+Search
+
+0 suggestions available
+Recommended Articles
+Where is my refund?
+How do I change my password and security questions?
+How do I check the status of my dispute or claim?
+How do I open a dispute with a seller?
+Why is my payment on hold or unavailable?
+Show more
+More ways to get help
+hc-help-option-img
+Browse All Topics
+hc-help-option-img
+Resolution Center
+hc-help-option-img
+Tax Center
+hc-help-option-img
+Message Center
+hc-help-option-img
+Technical Help
+hc-help-option-img
+Business Help
+How are we doing?
+
+Take our survey
+Get the PayPal App
+Get the PayPal App
+Help
+Contact
+Fees
+Security Center
+Privacy Center
+Shop
+Apps
+Enterprise
+Partners
+United States
+About
+Newsroom
+Jobs
+Investor Relations
+Government Relations
+© 1999–2026
+Accessibility
+Privacy Statement
+Cookies
+Legal
+Licenses
+PayPal is located at 2211 N 1st St. San Jose, CA 95131
+
+header-footer.headerPPCP.primary.nav.menu.title
+wbass
+
+Developer
+
+1
+DH
+
+https://www.paypal.com/restore/dashboard
+
+We’re no longer offering PayPal services for this account
+Sometimes we can’t process account activity for a variety of reasons, including local laws, our policies, or the policies of our partner banks and card networks.
+
+Based on the information we have today, there was activity on this account that we cannot support.
+
+What can you do with your account?
+
+Your account has been permanently deactivated. However, you can still view your transaction history, download account statements, or request copies of your data.
+
+Before you can withdraw or transfer any remaining funds from your account, we need to hold them for up to 180 days to cover things like chargebacks or other financial liabilities.
+
+We’ll review the account and email you when funds are available.
+
+How can you learn more?
+
+To learn more about the types of account activity we can’t support, read the Supported Activity section in our Help Center.
+
+We apologize for the inconvenience.
+
+Reference ID: PP-L-858240992249
+
+
+brand logo
+
+Create
+Home
+
+Activity
+
+Pay & Get Paid
+
+Marketing For Growth
+
+Business Tools
+
+wbass
+
+Developer
+
+1
+DH
+Notifications
+Your account has been permanently deactivated.
+You have an account alert
+Find Out More
+Help
+Contact
+Fees
+Security
+About
+Developers
+Partners
+Bahasa Indonesia
+English
+Copyright © 1999-2026 PayPal. All rights reserved.
+
+Privacy
+Legal
+Policy updates
+PayPal Pte. Ltd. is licensed by the Monetary Authority of Singapore as a Major Payment Institution under the Payment Services Act 2019.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
