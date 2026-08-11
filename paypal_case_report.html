@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Account Support Case — Didik Hermanto (wbasscustom@gmail.com)</title>
+    <meta name="description"
+        content="PayPal account restricted with negative balance. On-Hold funds of $343.74 need manual release. Reference ID: PP-L-857431525848">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-card: #111827;
+            --bg-card-hover: #1a2332;
+            --accent: #3b82f6;
+            --accent-glow: rgba(59, 130, 246, 0.15);
+            --danger: #ef4444;
+            --danger-glow: rgba(239, 68, 68, 0.15);
+            --success: #10b981;
+            --success-glow: rgba(16, 185, 129, 0.15);
+            --warning: #f59e0b;
+            --warning-glow: rgba(245, 158, 11, 0.15);
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: #1e293b;
+            --border-light: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .grain-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+        }
+
+        /* Language Toggle */
+        .lang-toggle-container {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            z-index: 100;
+        }
+
+        #langToggleBtn {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #langToggleBtn:hover {
+            border-color: var(--accent);
+            background: var(--bg-card-hover);
+        }
+
+        .lang-id {
+            display: none;
+        }
+
+        body.lang-id-active .lang-en {
+            display: none !important;
+        }
+
+        body.lang-id-active .lang-id {
+            display: block !important;
+        }
+
+        span.lang-id,
+        strong.lang-id {
+            display: none;
+        }
+
+        body.lang-id-active span.lang-id,
+        body.lang-id-active strong.lang-id {
+            display: inline !important;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--danger-glow);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 6px 16px;
+            border-radius: 100px;
+            font-size: 12px;
+            color: var(--danger);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 0 20px 4px rgba(239, 68, 68, 0.15);
+            }
+        }
+
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--danger);
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #f1f5f9, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero .subtitle {
+            color: var(--text-secondary);
+            font-size: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero .ref-id {
+            margin-top: 16px;
+            font-family: monospace;
+            font-size: 13px;
+            color: var(--text-muted);
+            background: var(--bg-card);
+            padding: 8px 16px;
+            border-radius: 8px;
+            display: inline-block;
+            border: 1px solid var(--border);
+        }
+
+        /* Account Info */
+        .account-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 32px 0;
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            border-color: var(--accent);
+            background: var(--bg-card-hover);
+            transform: translateY(-2px);
+        }
+
+        .info-card .label {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+        }
+
+        .info-card .value {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .info-card .value.email-val {
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .info-card .value.negative {
+            color: var(--danger);
+        }
+
+        .info-card .value.hold {
+            color: var(--warning);
+        }
+
+        .info-card .value.status {
+            color: var(--danger);
+        }
+
+        /* Section */
+        .section {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .section-header {
+            margin-bottom: 24px;
+        }
+
+        .section-header h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-header h2 .icon {
+            font-size: 1.2rem;
+        }
+
+        .section-header p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), var(--danger), var(--warning));
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 24px;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            border-color: var(--border-light);
+            background: var(--bg-card-hover);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -24px;
+            top: 22px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 2px solid var(--bg-primary);
+        }
+
+        .timeline-item.error::before {
+            background: var(--danger);
+        }
+
+        .timeline-item.warning::before {
+            background: var(--warning);
+        }
+
+        .timeline-item.success::before {
+            background: var(--success);
+        }
+
+        .timeline-date {
+            font-size: 11px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .timeline-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Evidence Gallery */
+        .evidence-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 16px;
+        }
+
+        .evidence-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .evidence-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .evidence-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: top;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .evidence-card img:hover {
+            opacity: 0.85;
+        }
+
+        .evidence-card .caption {
+            padding: 12px 16px;
+        }
+
+        .evidence-card .caption .tag {
+            display: inline-block;
+            font-size: 10px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+        }
+
+        .evidence-card .caption .tag.critical {
+            background: var(--danger-glow);
+            color: var(--danger);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .evidence-card .caption .tag.important {
+            background: var(--warning-glow);
+            color: var(--warning);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        .evidence-card .caption .tag.info {
+            background: var(--accent-glow);
+            color: var(--accent);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+        }
+
+        .evidence-card .caption .tag.success-tag {
+            background: var(--success-glow);
+            color: var(--success);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .evidence-card .caption h4 {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+
+        .evidence-card .caption p {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        /* Email Section */
+        .email-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .email-tab {
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            border: 1px solid var(--border);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        .email-tab.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .email-tab:hover:not(.active) {
+            border-color: var(--border-light);
+            background: var(--bg-card-hover);
+        }
+
+        .email-content {
+            display: none;
+        }
+
+        .email-content.active {
+            display: block;
+        }
+
+        .email-block {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            position: relative;
+            font-size: 14px;
+            white-space: pre-wrap;
+            line-height: 1.8;
+        }
+
+        .email-block .copy-btn {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .email-block .copy-btn:hover {
+            background: #2563eb;
+            transform: scale(1.05);
+        }
+
+        .email-block .copy-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.92);
+            align-items: center;
+            justify-content: center;
+            cursor: zoom-out;
+        }
+
+        .lightbox.show {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: fixed;
+            top: 20px;
+            right: 24px;
+            font-size: 32px;
+            color: white;
+            cursor: pointer;
+            z-index: 1001;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: background 0.2s;
+        }
+
+        .lightbox-close:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .evidence-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .email-block {
+                padding: 16px;
+                font-size: 12px;
+            }
+
+            .container {
+                padding: 0 16px;
+            }
+
+            .lang-toggle-container {
+                top: 12px;
+                right: 12px;
+            }
+
+            #langToggleBtn {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grain-overlay"></div>
+
+    <div class="lang-toggle-container">
+        <button id="langToggleBtn" onclick="toggleGlobalLanguage()">
+            <span class="lang-en">🇮🇩 Switch to Bahasa Indonesia</span>
+            <span class="lang-id">🇬🇧 Switch to English</span>
+        </button>
+    </div>
+
+    <div class="container">
+        <!-- HERO -->
+        <header class="hero">
+            <div class="hero-badge">
+                <span class="dot"></span>
+                <span class="lang-en">URGENT — Account Restricted</span>
+                <span class="lang-id">MENDESAK — Akun Dibatasi</span>
+            </div>
+
+            <h1 class="lang-en">PayPal Account Support Case</h1>
+            <h1 class="lang-id">Laporan Kasus Dukungan PayPal</h1>
+
+            <p class="subtitle lang-en">Account <strong>wbasscustom@gmail.com</strong> is restricted with a negative
+                balance of <strong style="color:#ef4444;">-$358.00 USD</strong>. All payment methods are blocked by the
+                system. On-Hold funds of <strong style="color:#f59e0b;">$343.74 USD</strong> exist inside the account
+                and can cover the deficit.</p>
+            <p class="subtitle lang-id">Akun <strong>wbasscustom@gmail.com</strong> sedang dibatasi dengan saldo minus
+                <strong style="color:#ef4444;">-$358.00 USD</strong>. Semua metode pembayaran diblokir oleh sistem.
+                Terdapat dana On-Hold sebesar <strong style="color:#f59e0b;">$343.74 USD</strong> di dalam akun yang
+                dapat menutupi kekurangan tersebut.</p>
+
+            <div class="ref-id"><span class="lang-en">Reference ID:</span><span class="lang-id">ID Referensi:</span>
+                PP-L-857431525848</div>
+        </header>
+
+        <!-- ACCOUNT INFO -->
+        <div class="account-info">
+            <div class="info-card">
+                <div class="label"><span class="lang-en">Account</span><span class="lang-id">Akun</span></div>
+                <div class="value email-val" title="wbasscustom@gmail.com">wbasscustom@gmail.com</div>
+            </div>
+            <div class="info-card">
+                <div class="label"><span class="lang-en">Current Balance</span><span class="lang-id">Saldo Saat
+                        Ini</span></div>
+                <div class="value negative">-$358.00 USD</div>
+            </div>
+            <div class="info-card">
+                <div class="label"><span class="lang-en">On-Hold Funds</span><span class="lang-id">Dana On-Hold</span>
+                </div>
+                <div class="value hold">$343.74 USD</div>
+            </div>
+            <div class="info-card">
+                <div class="label"><span class="lang-en">Account Status</span><span class="lang-id">Status Akun</span>
+                </div>
+                <div class="value status">🔒 <span class="lang-en">Restricted</span><span
+                        class="lang-id">Dibatasi</span></div>
+            </div>
+        </div>
+
+        <!-- TIMELINE -->
+        <section class="section">
+            <div class="section-header">
+                <h2><span class="icon">📋</span> <span class="lang-en">Case Timeline</span><span
+                        class="lang-id">Kronologi Kasus</span></h2>
+                <p class="lang-en">Chronological sequence of events leading to the current situation</p>
+                <p class="lang-id">Urutan kronologis peristiwa yang menyebabkan situasi saat ini</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date"><span class="lang-en">August 3, 2026</span><span class="lang-id">3
+                            Agustus 2026</span></div>
+                    <div class="timeline-title lang-en">PayPal flagged wbass account with -$358.00 negative balance
+                    </div>
+                    <div class="timeline-title lang-id">PayPal menandai akun wbass dengan saldo minus -$358.00</div>
+                    <div class="timeline-desc lang-en">The system generated a negative balance due to a chargeback /
+                        reversed transaction on the wbass business account.</div>
+                    <div class="timeline-desc lang-id">Sistem menghasilkan saldo minus akibat chargeback / pembatalan
+                        transaksi pada akun bisnis wbass.</div>
+                </div>
+                <div class="timeline-item success">
+                    <div class="timeline-date"><span class="lang-en">August 5, 2026</span><span class="lang-id">5
+                            Agustus 2026</span> — 19:00 WIB</div>
+                    <div class="timeline-title lang-en">Bank Jago VISA card linked & confirmed on both accounts</div>
+                    <div class="timeline-title lang-id">Kartu VISA Bank Jago ditautkan & dikonfirmasi pada kedua akun
+                    </div>
+                    <div class="timeline-desc lang-en">Bank Jago VISA card (ending 5539) was successfully linked and
+                        verified (4-digit code confirmed) on both the wbass account and A.D.A KOMPUTER account. $1.95
+                        was charged TWICE for verification.</div>
+                    <div class="timeline-desc lang-id">Kartu VISA Bank Jago (akhiran 5539) berhasil ditautkan dan
+                        diverifikasi (kode 4 digit dikonfirmasi) pada akun wbass dan akun A.D.A KOMPUTER. Saldo
+                        terpotong $1.95 DUA KALI untuk verifikasi.</div>
+                </div>
+                <div class="timeline-item error">
+                    <div class="timeline-date"><span class="lang-en">August 5, 2026</span><span class="lang-id">5
+                            Agustus 2026</span> — 19:30 WIB</div>
+                    <div class="timeline-title lang-en">Direct payment attempt FAILED — "Something went wrong"</div>
+                    <div class="timeline-title lang-id">Percobaan pembayaran langsung GAGAL — "Ada yang salah"</div>
+                    <div class="timeline-desc lang-en">Multiple attempts to pay the -$358 negative balance directly
+                        using the Bank Jago card were rejected by PayPal's system, despite the card being verified and
+                        having sufficient funds (Rp 7,000,000).</div>
+                    <div class="timeline-desc lang-id">Berbagai percobaan untuk membayar saldo minus -$358 secara
+                        langsung menggunakan kartu Bank Jago ditolak oleh sistem PayPal, meskipun kartu sudah
+                        diverifikasi dan memiliki dana yang cukup (Rp 7.000.000).</div>
+                </div>
+                <div class="timeline-item success">
+                    <div class="timeline-date"><span class="lang-en">August 5, 2026</span><span class="lang-id">5
+                            Agustus 2026</span> — 20:22 WIB</div>
+                    <div class="timeline-title lang-en">Alternative: $358 sent from A.D.A KOMPUTER → wbass</div>
+                    <div class="timeline-title lang-id">Alternatif: $358 dikirim dari A.D.A KOMPUTER → wbass</div>
+                    <div class="timeline-desc lang-en">As a workaround, $358 was sent from the A.D.A KOMPUTER PayPal
+                        account to wbass as a Goods & Services payment. After PayPal's transaction fee of $14.26, net
+                        amount received: $343.74. Status: ON HOLD.</div>
+                    <div class="timeline-desc lang-id">Sebagai solusi, $358 dikirim dari akun PayPal A.D.A KOMPUTER ke
+                        wbass sebagai pembayaran Barang & Jasa. Setelah dipotong biaya transaksi PayPal $14.26, jumlah
+                        bersih yang diterima: $343.74. Status: ON HOLD (Ditahan).</div>
+                </div>
+                <div class="timeline-item success">
+                    <div class="timeline-date"><span class="lang-en">August 5, 2026</span><span class="lang-id">5
+                            Agustus 2026</span> — 20:41 WIB</div>
+                    <div class="timeline-title lang-en">Seller (wbass) marked order as "Processed" + Tracking submitted
+                    </div>
+                    <div class="timeline-title lang-id">Penjual (wbass) menandai pesanan "Processed" + Resi diinput
+                    </div>
+                    <div class="timeline-desc lang-en">The wbass account added tracking info with status "Order
+                        Processed" and "Tracking information not required" checked.</div>
+                    <div class="timeline-desc lang-id">Akun wbass menambahkan info pelacakan dengan status "Order
+                        Processed" dan mencentang "Informasi pelacakan tidak diperlukan".</div>
+                </div>
+                <div class="timeline-item success">
+                    <div class="timeline-date"><span class="lang-en">August 5, 2026</span><span class="lang-id">5
+                            Agustus 2026</span> — 20:50 WIB</div>
+                    <div class="timeline-title lang-en">Buyer (A.D.A KOMPUTER) confirmed receipt of order</div>
+                    <div class="timeline-title lang-id">Pembeli (A.D.A KOMPUTER) mengonfirmasi penerimaan pesanan</div>
+                    <div class="timeline-desc lang-en">The A.D.A KOMPUTER account clicked "Confirm Receipt" to
+                        acknowledge the transaction was completed. Transaction status shows "Selesai" (Completed) and
+                        "Lunas" (Paid).</div>
+                    <div class="timeline-desc lang-id">Akun A.D.A KOMPUTER mengklik "Konfirmasi Penerimaan" untuk
+                        mengakui transaksi selesai. Status transaksi menunjukkan "Selesai" (Completed) dan "Lunas"
+                        (Paid).</div>
+                </div>
+                <div class="timeline-item warning">
+                    <div class="timeline-date"><span class="lang-en">August 5, 2026</span><span class="lang-id">5
+                            Agustus 2026</span> — 21:50 WIB</div>
+                    <div class="timeline-title lang-en">$343.74 remains ON HOLD — Account gets RESTRICTED</div>
+                    <div class="timeline-title lang-id">$343.74 tetap ON HOLD — Akun menjadi RESTRICTED (Dibatasi)</div>
+                    <div class="timeline-desc lang-en">Despite both parties completing their steps, the $343.74 remains
+                        on hold. Shortly after, PayPal restricted the wbass account entirely: no sending, receiving,
+                        withdrawing, or paying allowed.</div>
+                    <div class="timeline-desc lang-id">Meskipun kedua belah pihak menyelesaikan langkah-langkahnya,
+                        $343.74 tetap tertahan. Tak lama setelah itu, PayPal membatasi akun wbass sepenuhnya: dilarang
+                        mengirim, menerima, menarik, atau membayar.</div>
+                </div>
+                <div class="timeline-item error">
+                    <div class="timeline-date"><span class="lang-en">August 8, 2026</span><span class="lang-id">8
+                            Agustus 2026</span> — 18:31 WIB</div>
+                    <div class="timeline-title lang-en">ALL payment methods blocked from fixing negative balance</div>
+                    <div class="timeline-title lang-id">SEMUA metode pembayaran diblokir dari melunasi saldo minus</div>
+                    <div class="timeline-desc lang-en">System message: "These payment methods do not allow transfers to
+                        fix a negative balance." All 9 linked banks/cards (BNI, Mandiri, Jago) are blocked. The account
+                        owner CANNOT resolve the negative balance through any self-service method.</div>
+                    <div class="timeline-desc lang-id">Pesan sistem: "Metode pembayaran ini tidak mengizinkan transfer
+                        untuk memperbaiki saldo negatif." Ke-9 bank/kartu yang ditautkan (BNI, Mandiri, Jago) diblokir.
+                        Pemilik akun TIDAK BISA menyelesaikan saldo negatif melalui metode mandiri apa pun.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EVIDENCE -->
+        <section class="section">
+            <div class="section-header">
+                <h2><span class="icon">📸</span> <span class="lang-en">Supporting Evidence</span><span
+                        class="lang-id">Bukti Pendukung</span></h2>
+                <p class="lang-en">Click any image to view full size</p>
+                <p class="lang-id">Klik gambar apa saja untuk memperbesar</p>
+            </div>
+            <div class="evidence-grid">
+                <!-- 4 NEW CARDS -->
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/GvGQMspK/Fix-your-negative-balance.jpg" alt="Fix your negative balance"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag critical"><span class="lang-en">Negative Balance</span><span
+                                class="lang-id">Saldo Minus</span></span>
+                        <h4 class="lang-en">Account Balance: -$358.00</h4>
+                        <h4 class="lang-id">Saldo Akun: -$358.00</h4>
+                        <p class="lang-en">Proof of the negative balance that caused the restriction</p>
+                        <p class="lang-id">Bukti saldo minus yang menyebabkan pembatasan akun</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/3myGtmqj/These-payment-methods-do-not-allow-transfers-to-fix-a-negative-balance.jpg"
+                        alt="Payment methods blocked" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag critical"><span class="lang-en">System Block</span><span class="lang-id">Sistem
+                                Diblokir</span></span>
+                        <h4 class="lang-en">All Payment Methods Blocked</h4>
+                        <h4 class="lang-id">Semua Metode Pembayaran Diblokir</h4>
+                        <p class="lang-en">Error preventing the user from fixing the balance themselves</p>
+                        <p class="lang-id">Error yang mencegah pemilik akun melunasi saldo secara mandiri</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/TqWt0C0L/impact-on-your-account.jpg" alt="Impact on your account"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag important"><span class="lang-en">Account Impact</span><span
+                                class="lang-id">Dampak Akun</span></span>
+                        <h4 class="lang-en">Restriction Impact Details</h4>
+                        <h4 class="lang-id">Detail Dampak Pembatasan</h4>
+                        <p class="lang-en">Showing the limitations placed on the wbass account</p>
+                        <p class="lang-id">Menunjukkan batasan yang dikenakan pada akun wbass</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/XxzN9j0N/quick-review.jpg" alt="Quick review"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag info"><span class="lang-en">Account Review</span><span class="lang-id">Tinjauan
+                                Akun</span></span>
+                        <h4 class="lang-en">Quick Review Status</h4>
+                        <h4 class="lang-id">Status Tinjauan Cepat</h4>
+                        <p class="lang-en">Status of the account review process</p>
+                        <p class="lang-id">Status dari proses tinjauan akun</p>
+                    </div>
+                </div>
+
+                <!-- ORIGINAL CARDS -->
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/d40f0CkT/Transaction-details-wbass.jpg"
+                        alt="Transaction details showing On Hold status" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag critical"><span class="lang-en">Critical Evidence</span><span
+                                class="lang-id">Bukti Kritis</span></span>
+                        <h4 class="lang-en">Transaction Details — On Hold</h4>
+                        <h4 class="lang-id">Detail Transaksi — On Hold</h4>
+                        <p class="lang-en">$343.74 USD stuck on hold in wbass account (TX: 3NY0039TH0860574L)</p>
+                        <p class="lang-id">$343.74 USD tertahan di akun wbass (TX: 3NY0039TH0860574L)</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/rGG3Kw1F/konfirmasi-diterima-adakomputer.jpg"
+                        alt="Buyer confirmed receipt" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag success-tag"><span class="lang-en">Confirmed</span><span
+                                class="lang-id">Dikonfirmasi</span></span>
+                        <h4 class="lang-en">Buyer Confirmed Receipt</h4>
+                        <h4 class="lang-id">Pembeli Mengonfirmasi Penerimaan</h4>
+                        <p class="lang-en">A.D.A KOMPUTER confirmed the order was received</p>
+                        <p class="lang-id">A.D.A KOMPUTER mengonfirmasi pesanan telah diterima</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/hJssv6h5/bukti-tf-385.jpg" alt="Transfer proof $358"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag important"><span class="lang-en">Payment Proof</span><span
+                                class="lang-id">Bukti Transfer</span></span>
+                        <h4 class="lang-en">Transfer Proof — $358.00 USD</h4>
+                        <h4 class="lang-id">Bukti Transfer — $358.00 USD</h4>
+                        <p class="lang-en">Original payment from A.D.A KOMPUTER to wbass</p>
+                        <p class="lang-id">Pembayaran asli dari A.D.A KOMPUTER ke wbass</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/RpKzfY1f/bill-paypal-1-95.jpg" alt="$1.95 card verification charge"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag important"><span class="lang-en">Refund Needed</span><span
+                                class="lang-id">Perlu Refund</span></span>
+                        <h4 class="lang-en">Card Verification Charge — $1.95 × 2</h4>
+                        <h4 class="lang-id">Potongan Verifikasi Kartu — $1.95 × 2</h4>
+                        <p class="lang-en">$3.90 USD total charged for card confirmation, not yet refunded</p>
+                        <p class="lang-id">Total $3.90 USD dipotong untuk konfirmasi kartu, belum dikembalikan</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/939pfB6s/On-Hold-wbass-paypal.jpg" alt="On Hold status in wbass"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag critical"><span class="lang-en">On Hold</span><span
+                                class="lang-id">Ditahan</span></span>
+                        <h4 class="lang-en">On Hold Status — wbass Dashboard</h4>
+                        <h4 class="lang-id">Status On Hold — Dashboard wbass</h4>
+                        <p class="lang-en">$343.74 remains on hold despite order completion</p>
+                        <p class="lang-id">$343.74 tetap ditahan meskipun pesanan telah selesai</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/pvgSDS70/Transaksi.jpg" alt="Transaction list A.D.A KOMPUTER"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag info"><span class="lang-en">Transaction Log</span><span class="lang-id">Log
+                                Transaksi</span></span>
+                        <h4 class="lang-en">Transaction List — A.D.A KOMPUTER</h4>
+                        <h4 class="lang-id">Daftar Transaksi — A.D.A KOMPUTER</h4>
+                        <p class="lang-en">Both transactions show "Selesai" (Completed) and "Lunas" (Paid)</p>
+                        <p class="lang-id">Kedua transaksi menunjukkan "Selesai" (Completed) dan "Lunas" (Paid)</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/PZpSXh1t/Permintaan-Pembayaran-Diterima.jpg"
+                        alt="Payment request accepted" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag success-tag"><span class="lang-en">Completed</span><span
+                                class="lang-id">Selesai</span></span>
+                        <h4 class="lang-en">Payment Request — Accepted</h4>
+                        <h4 class="lang-id">Permintaan Pembayaran — Diterima</h4>
+                        <p class="lang-en">$358.00 USD payment request from wbass marked as "Lunas"</p>
+                        <p class="lang-id">Permintaan pembayaran $358.00 USD dari wbass ditandai "Lunas"</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/M5g8WqSt/Pembayaran-terkirim-kepada-wbass.jpg"
+                        alt="Payment sent to wbass" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag info"><span class="lang-en">Proof</span><span
+                                class="lang-id">Bukti</span></span>
+                        <h4 class="lang-en">Payment Sent to wbass</h4>
+                        <h4 class="lang-id">Pembayaran Dikirim ke wbass</h4>
+                        <p class="lang-en">-$358.00 USD from A.D.A KOMPUTER, status: Selesai (Completed)</p>
+                        <p class="lang-id">-$358.00 USD dari A.D.A KOMPUTER, status: Selesai</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/BKsVb5fx/tranferan-dari-paypal-anton-jadi-grey-not-available-yet.jpg"
+                        alt="Not available yet status" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag critical"><span class="lang-en">Blocked</span><span
+                                class="lang-id">Diblokir</span></span>
+                        <h4 class="lang-en">Funds "Not Available Yet"</h4>
+                        <h4 class="lang-id">Dana "Not Available Yet"</h4>
+                        <p class="lang-en">$343.74 USD greyed out and marked as not available</p>
+                        <p class="lang-id">$343.74 USD menjadi abu-abu dan tidak tersedia</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/nM9YygdX/Jago-kartu-digital-History-08082026.png"
+                        alt="Bank Jago transaction history" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag info"><span class="lang-en">Bank Statement</span><span class="lang-id">Mutasi
+                                Bank</span></span>
+                        <h4 class="lang-en">Bank Jago — Card Transaction History</h4>
+                        <h4 class="lang-id">Bank Jago — Riwayat Kartu</h4>
+                        <p class="lang-en">Shows PayPal charges including 2× $1.95 verification fees</p>
+                        <p class="lang-id">Menunjukkan potongan PayPal termasuk 2× $1.95 biaya verifikasi</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/TxG6Kx9G/5154-KODE-Pay-Pal.jpg" alt="PayPal verification code"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag success-tag"><span class="lang-en">Verified</span><span
+                                class="lang-id">Terverifikasi</span></span>
+                        <h4 class="lang-en">PayPal 4-Digit Verification Code</h4>
+                        <h4 class="lang-id">Kode Verifikasi 4 Digit PayPal</h4>
+                        <p class="lang-en">Code 5154 used to confirm Bank Jago card on PayPal</p>
+                        <p class="lang-id">Kode 5154 digunakan untuk mengonfirmasi kartu Bank Jago</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/ghJ4YSr/mutasi-kode-paypal-bank-jago.jpg"
+                        alt="Bank Jago mutation PayPal code" onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag info"><span class="lang-en">Bank Mutation</span><span class="lang-id">Mutasi
+                                Bank</span></span>
+                        <h4 class="lang-en">Bank Jago Mutation — PayPal Code</h4>
+                        <h4 class="lang-id">Mutasi Bank Jago — Kode PayPal</h4>
+                        <p class="lang-en">Bank statement showing the PayPal verification code charge</p>
+                        <p class="lang-id">Mutasi bank yang menampilkan potongan kode verifikasi PayPal</p>
+                    </div>
+                </div>
+                <div class="evidence-card">
+                    <img src="https://i.ibb.co/BVQkG8Gn/mutasi-from-paypal.jpg" alt="Bank mutation from PayPal"
+                        onclick="openLightbox(this.src)">
+                    <div class="caption">
+                        <span class="tag info"><span class="lang-en">Bank Mutation</span><span class="lang-id">Mutasi
+                                Bank</span></span>
+                        <h4 class="lang-en">Bank Jago — Mutation from PayPal</h4>
+                        <h4 class="lang-id">Bank Jago — Mutasi dari PayPal</h4>
+                        <p class="lang-en">Complete bank statement showing all PayPal-related transactions</p>
+                        <p class="lang-id">Mutasi bank lengkap yang menampilkan semua transaksi terkait PayPal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EMAIL EN / ID (Isolated logic) -->
+        <section class="section">
+            <div class="section-header">
+                <h2><span class="icon">✉️</span> <span class="lang-en">Message to PayPal Support</span><span
+                        class="lang-id">Pesan untuk CS PayPal</span></h2>
+                <p class="lang-en">Pre-written professional message — click to copy</p>
+                <p class="lang-id">Pesan profesional yang sudah disiapkan — klik untuk menyalin</p>
+            </div>
+            <div class="email-tabs">
+                <div class="email-tab active" onclick="switchTab('en')">🇬🇧 English</div>
+                <div class="email-tab" onclick="switchTab('id')">🇮🇩 Bahasa Indonesia</div>
+            </div>
+            <div id="email-en" class="email-content active">
+                <div class="email-block">
+                    <button class="copy-btn" onclick="copyEmail('en')">📋 Copy</button>
+                    NOTE REGARDING BUSINESS LICENSE:
+                    I operate as a sole proprietor (freelancer) under the trade name "wbass custom". I do not have a
+                    formal corporate business license yet, so I have provided my Personal Tax ID (NPWP) matching the
+                    account owner's name (Didik Hermanto) as proof of identity and tax registration.
+                    --------------------------------------------------
+
+                    <strong>Subject:</strong> Request to Release On-Hold Funds to Cover Negative Balance & Refund of
+                    Card Confirmation Charges
+
+                    Dear PayPal Support Team,
+
+                    My account (<strong>wbasscustom@gmail.com</strong>) is currently restricted and has a negative
+                    balance of <strong style="color:#ef4444;">-$358.00 USD</strong>.
+
+                    I am unable to resolve this negative balance because the system has blocked ALL my linked payment
+                    methods (banks and cards). The error message states: <em>"These payment methods do not allow
+                        transfers to fix a negative balance."</em> (Please see the attached screenshots as proof.)
+
+                    However, I have an On-Hold payment of <strong style="color:#f59e0b;">$343.74 USD</strong> already
+                    inside my account:
+                    • <strong>Transaction ID:</strong> 3NY0039TH0860574L
+                    • <strong>Date:</strong> August 5, 2026
+                    • <strong>From:</strong> A.D.A KOMPUTER (antonmgnfamily@gmail.com)
+                    • <strong>Status:</strong> The buyer has confirmed receipt; shipping status is "Order Processed"
+
+                    I kindly request the following:
+
+                    <strong>1.</strong> Please manually release the On-Hold funds of $343.74 USD and apply them toward
+                    my negative balance.
+
+                    <strong>2.</strong> For the remaining balance of approximately $14.26 USD, please either allow me to
+                    pay using my linked Bank Jago VISA card (ending in 5539), or advise me on how to settle it.
+
+                    <strong>3.</strong> I was also charged $1.95 USD <strong>TWICE</strong> (total $3.90 USD) for card
+                    confirmation/verification on August 5, 2026 — once for the wbass account and once for the A.D.A
+                    KOMPUTER account. Both confirmations were completed successfully, but the $3.90 has NOT been
+                    refunded to my Bank Jago account yet. Please process the refund as soon as possible.
+
+                    <strong>Reference ID:</strong> PP-L-857431525848
+
+                    I have attached supporting screenshots for your review. All evidence images are also accessible via:
+                    <em>https://wbasscustom-boop.github.io/paypal-report/</em>
+
+                    I appreciate your prompt assistance in resolving this matter.
+
+                    Best regards,
+                    <strong>Didik Hermanto</strong>
+                    Account: wbasscustom@gmail.com
+                </div>
+            </div>
+            <div id="email-id" class="email-content">
+                <div class="email-block">
+                    <button class="copy-btn" onclick="copyEmail('id')">📋 Copy</button>
+                    CATATAN MENGENAI IZIN USAHA:
+                    Saya beroperasi sebagai usaha perorangan (freelancer) dengan nama dagang "wbass custom". Saya belum
+                    memiliki surat izin usaha perusahaan resmi, sehingga saya melampirkan NPWP Pribadi saya yang sesuai
+                    dengan nama pemilik akun (Didik Hermanto) sebagai bukti identitas dan registrasi pajak.
+                    --------------------------------------------------
+
+                    <strong>Perihal:</strong> Permintaan Pencairan Dana On Hold untuk Melunasi Saldo Minus &
+                    Pengembalian Biaya Konfirmasi Kartu
+
+                    Yth. Tim Bantuan PayPal,
+
+                    Akun saya (<strong>wbasscustom@gmail.com</strong>) saat ini sedang dibatasi (restricted) dan
+                    memiliki saldo minus sebesar <strong style="color:#ef4444;">-$358,00 USD</strong>.
+
+                    Saya tidak dapat melunasi saldo minus ini karena sistem telah memblokir SEMUA metode pembayaran saya
+                    (bank dan kartu). Pesan error yang muncul adalah: <em>"These payment methods do not allow transfers
+                        to fix a negative balance."</em> (Silakan lihat screenshot terlampir sebagai bukti.)
+
+                    Namun, di dalam akun saya terdapat dana yang sedang ditahan (On Hold) sebesar <strong
+                        style="color:#f59e0b;">$343,74 USD</strong>:
+                    • <strong>ID Transaksi:</strong> 3NY0039TH0860574L
+                    • <strong>Tanggal:</strong> 5 Agustus 2026
+                    • <strong>Dari:</strong> A.D.A KOMPUTER (antonmgnfamily@gmail.com)
+                    • <strong>Status:</strong> Pembeli sudah mengonfirmasi penerimaan; status pengiriman "Order
+                    Processed"
+
+                    Saya mohon bantuan untuk:
+
+                    <strong>1.</strong> Mencairkan dana On Hold sebesar $343,74 USD secara manual dan menggunakannya
+                    untuk menutup saldo minus saya.
+
+                    <strong>2.</strong> Untuk sisa saldo minus sekitar $14,26 USD, mohon izinkan saya membayarnya
+                    menggunakan kartu VISA Bank Jago saya (berakhiran 5539), atau mohon arahannya bagaimana cara
+                    melunasinya.
+
+                    <strong>3.</strong> Saya juga dikenakan biaya $1,95 USD sebanyak <strong>DUA KALI</strong> (total
+                    $3,90 USD) untuk konfirmasi/verifikasi kartu pada tanggal 5 Agustus 2026 — satu kali untuk akun
+                    wbass dan satu kali untuk akun A.D.A KOMPUTER. Kedua konfirmasi berhasil diselesaikan, namun $3,90
+                    tersebut BELUM dikembalikan ke rekening Bank Jago saya. Mohon segera diproses pengembaliannya.
+
+                    <strong>Reference ID:</strong> PP-L-857431525848
+
+                    Saya melampirkan screenshot pendukung untuk ditinjau. Semua bukti gambar juga dapat diakses melalui:
+                    <em>https://wbasscustom-boop.github.io/paypal-report/</em>
+
+                    Terima kasih atas bantuan dan tanggapan cepatnya.
+
+                    Hormat saya,
+                    <strong>Didik Hermanto</strong>
+                    Akun: wbasscustom@gmail.com
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <p class="lang-en">This page was created as a support document for PayPal Case Reference
+                <strong>PP-L-857431525848</strong></p>
+            <p class="lang-id">Halaman ini dibuat sebagai dokumen dukungan untuk Kasus PayPal Referensi
+                <strong>PP-L-857431525848</strong></p>
+            <p style="margin-top:8px;">Account Holder: Didik Hermanto — wbasscustom@gmail.com — Generated on August 8,
+                2026</p>
+        </footer>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <div class="lightbox-close" onclick="closeLightbox()">✕</div>
+        <img id="lightbox-img" src="" alt="Full size evidence">
+    </div>
+
+    <script>
+        // Global Language Toggle Logic
+        let currentLang = 'en';
+        function toggleGlobalLanguage() {
+            currentLang = currentLang === 'en' ? 'id' : 'en';
+            if (currentLang === 'id') {
+                document.body.classList.add('lang-id-active');
+            } else {
+                document.body.classList.remove('lang-id-active');
+            }
+        }
+
+        // Lightbox Logic
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('show');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+        // Email Tabs Logic (Independent of Global Lang)
+        function switchTab(lang) {
+            document.querySelectorAll('.email-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.email-content').forEach(c => c.classList.remove('active'));
+            document.getElementById('email-' + lang).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function copyEmail(lang) {
+            const el = document.querySelector('#email-' + lang + ' .email-block');
+            const text = el.innerText.replace('📋 Copy', '').trim();
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = el.querySelector('#email-' + lang + ' .copy-btn');
+                btn.textContent = '✅ Copied!';
+                setTimeout(() => { btn.textContent = '📋 Copy'; }, 2000);
+            });
+        }
+    </script>
+</body>
+
+</html>
