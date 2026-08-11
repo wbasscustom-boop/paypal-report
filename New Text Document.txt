@@ -1,0 +1,13 @@
+ask : isinya ini "G:\Konsumen\didik_wbass\paypal\BERKAS_SIAP_UPLOAD_PAYPAL\scr\Submit your bank statement.jpg" apakah anda tidak salah saya harus upload ini "G:\Konsumen\didik_wbass\paypal\BERKAS_SIAP_UPLOAD_PAYPAL\1_Submit_Bank_Statement\Jago_kartu digital_History_08082026.pdf" ?
+
+
+answer:
+Viewed Submit%20your%20bank%20statement.jpg
+
+Betul sekali Pak, tidak salah! **Tepat 100%.** 
+
+Di layar itu tertulis: *"You'll need to submit a copy of the bank statement for a bank linked to your PayPal account..."* (Anda perlu mengunggah salinan rekening koran untuk bank yang terhubung ke akun PayPal Anda) dan format yang diterima adalah **JPG, GIF, PNG, PDF | maksimal 5 MB**.
+
+File **`Jago_kartu digital_History_08082026.pdf`** yang ada di folder `1_Submit_Bank_Statement` itu adalah format yang paling sempurna dan profesional untuk di-upload ke sana.
+
+Silakan klik **Browse files** atau langsung ditarik *(Drag and drop)* file PDF tersebut ke dalam kotak putus-putus itu, lalu klik **Submit**! Lanjutkan ke langkah berikutnya ya Pak.

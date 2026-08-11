@@ -1,0 +1,11 @@
+Viewed Provide%20proof%20of%20fulfillment.jpg
+
+Berdasarkan screenshot tersebut, PayPal meminta bukti pengiriman khusus untuk **Transaction ID 3NY00391H0660574L** (yaitu transaksi $358 dari A.D.A KOMPUTER).
+
+**Langkah yang harus Bapak lakukan:**
+1. Klik tulisan biru yang berbunyi **"Transaction ID 3NY00391H0660574L"** (atau klik tanda panah `>` di sebelahnya).
+2. Setelah diklik, biasanya akan muncul halaman baru untuk mengisi resi pengiriman (Tracking Number) atau mengunggah file bukti.
+3. **Jika diminta upload file:** Bapak tinggal upload ke-3 gambar yang ada di folder **`3_Provide_Proof_of_Fulfillment`**.
+4. **Jika diminta nomor resi / tracking:** Pilih opsi *"Service/Digital Good"* atau *"Tracking not required"*, lalu tuliskan keterangan singkat: *"This was a direct service payment, buyer has already confirmed receipt on their end."*
+
+Silakan diklik dulu tulisan biru transaksinya Pak, lalu beritahu saya apa yang muncul setelahnya!

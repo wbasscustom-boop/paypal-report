@@ -1,0 +1,31 @@
+NOTE REGARDING BUSINESS LICENSE: 
+I operate as a sole proprietor (freelancer) under the trade name "wbass custom". I do not have a formal corporate business license yet, so I have provided my Personal Tax ID (NPWP) matching the account owner's name (Didik Hermanto) as proof of identity and tax registration.
+--------------------------------------------------
+
+Subject: Account Limitation - Negative Balance Resolution Request
+
+Dear PayPal Support,
+
+My account (wbasscustom@gmail.com) is currently restricted and has a negative balance of -$358.00 USD. I am unable to resolve this negative balance because the system has blocked ALL my linked payment methods (banks and cards). The error message states: "These payment methods do not allow transfers to fix a negative balance."
+
+However, I have an On-Hold payment of $343.74 USD already inside my account:
+• Transaction ID: 3NY0039TH0860574L
+• Date: August 5, 2026
+• From: A.D.A KOMPUTER (antonmgnfamily@gmail.com)
+• Status: The buyer has confirmed receipt; shipping status is "Order Processed"
+
+I kindly request the following:
+1. Please manually release the On-Hold funds of $343.74 USD and apply them toward my negative balance.
+2. For the remaining balance of approximately $14.26 USD, please allow me to pay it using my linked Bank Jago VISA card, or advise me on how to settle it since the system blocked it.
+3. I was also charged $1.95 USD TWICE (total $3.90 USD) for card verification on August 5, 2026. Both confirmations were successful, but the $3.90 has NOT been refunded to my Bank Jago account yet. Please process the refund.
+
+Reference ID: PP-L-857431525848
+
+Full case report with all evidence screenshots and chronological timeline:
+https://wbasscustom-boop.github.io/paypal-report/
+
+I appreciate your prompt assistance in resolving this matter.
+
+Best regards,
+Didik Hermanto
+Account: wbasscustom@gmail.com
